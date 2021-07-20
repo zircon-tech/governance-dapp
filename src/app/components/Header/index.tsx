@@ -107,11 +107,11 @@ export function Header() {
 
   const pages = [
     {
-      to: 'https://live.sovryn.app/',
+      to: 'https://babelfish.netlify.app',
       title: t(translations.mainMenu.dapp),
     },
     {
-      to: 'https://wiki.sovryn.app/en/sovryn-dapp/faq-dapp',
+      to: 'https://babelfish.money/',
       title: t(translations.mainMenu.help),
     },
   ];
@@ -164,28 +164,10 @@ export function Header() {
       )}
       <header className="bg-black mb-2">
         <div className="flex min-h justify-between items-center mb-4 px-4 pt-2 pb-2">
-          <div className="xl:hidden">
-            <div ref={node}>
-              <Burger open={open} setOpen={setOpen} />
-              <Menu open={open} setOpen={setOpen} />
-            </div>
-          </div>
-          <div className="xl:flex flex-row items-center">
-            <a href="https://live.sovryn.app" rel="noopener noreferrer">
+            <a href="https://babelfish.netlify.app" rel="noopener noreferrer">
               <StyledLogo src={logoSvg} />
             </a>
-          </div>
           <div className="flex justify-start items-center">
-            <a
-              href="https://wiki.sovryn.app/en/sovryn-dapp/faq-dapp"
-              rel="noopener noreferrer"
-              className="nav-item mr-2 hidden xl:block"
-            >
-              {t(translations.mainMenu.help)}
-            </a>
-            <div className="mr-2">
-              <LanguageToggle />
-            </div>
             <WalletConnectorButton />
           </div>
         </div>
@@ -196,11 +178,10 @@ export function Header() {
 const StyledLogo = styled.img.attrs(_ => ({
   alt: '',
 }))`
-  width: 130px;
+  width: 50px;
   height: 50px;
-  margin: 0 0 0 1rem;
   ${media.xl`
-    width: 284px;
+    width: 48px;
     height: 48px;
     margin: 0;
   `}

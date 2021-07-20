@@ -3,7 +3,7 @@
   --background: #171717;
   --secondary-bg: #414042;
   --component-bg: #0b223b;
-  --Gold: #fec004;
+  --Gold: #32f05f;
   --Field_bg: #05182e;
   --Green: #00ce7d;
   --Red: #eb2106;
@@ -21,7 +21,7 @@
   --red: #eb2106;
   --green: #00ce7d;
   --teal: #4ecdc4;
-  --gold: #fec004;
+  --gold: #32f05f;
   --gold5: rgba(254, 192, 4, 0.05);
   --gold25: rgba(254, 192, 4, 0.25);
   --gold35: rgba(254, 192, 4, 0.35);
@@ -34,8 +34,8 @@
   --body-bg: var(--primary);
   --body-color: var(--white);
 
-  --primary-font: 'Rowdies', cursive;
-  --secondary-font: 'Work Sans', sans-serif;
+  --primary-font: 'ArbelRegular';
+  --secondary-font: 'ArbelRegular';
 
   --sales-background: #181818;
 }
@@ -79,11 +79,11 @@ $theme-colors: (
   'dark-gray': $dark-gray,
   'light-gray': $light-gray,
   'teal': $teal,
-  'gold': #fec004,
+  'gold': #32f05f,
   'red': #eb2106,
   'green': #00ce7d,
   'customOrange': #ff9931,
-  'Gold': #fec004,
+  'Gold': #32f05f,
   'customTeal': #4ecdc4,
   'lightGrey': #a9bacd,
   'MediumGrey': #7b96b5,
@@ -99,7 +99,7 @@ $theme-colors: (
 
 $border-radius: 5px;
 $font-family-base: 'Rowdies', cursive;
-$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-arbel: 'ArbelRegular';
 
 //$font-size-base: 18px;
 //$font-size-sm: 14px;

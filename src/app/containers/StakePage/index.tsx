@@ -398,13 +398,13 @@ function InnerStakePage() {
             <h2 className="text-white pt-8 pb-5 pl-10">Staking/Vesting</h2>
             <div className="xl:flex items-stretch justify-around mt-2">
               <div className="mx-2 bg-gray-800 staking-box p-8 pb-6 rounded-2xl w-full xl:w-1/4 mb-5 xl:mb-0">
-                <p className="text-lg -mt-1">Total staked SOV</p>
+                <p className="text-lg -mt-1">Total staked FISH</p>
                 <p
                   className={`text-4-5xl mt-2 mb-6 ${
                     balanceOf.loading && 'skeleton'
                   }`}
                 >
-                  {numberFromWei(balanceOf.value).toLocaleString()} SOV
+                  {numberFromWei(balanceOf.value).toLocaleString()} FISH
                 </p>
                 <Modal
                   show={stakeForm}
@@ -505,7 +505,7 @@ function InnerStakePage() {
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="mt-5 font-montserrat text-xs">
+                  <tbody className="mt-5 font-arbel text-xs">
                     <StakesOverview
                       stakes={stakesArray}
                       loading={stakeLoad || getStakes.loading}
@@ -692,12 +692,12 @@ const StakesOverview: React.FC<Stakes> = ({
                   <img src={logoSvg} className="ml-3 mr-3" alt="sov" />
                 </div>
                 <div className="text-sm font-normal hidden xl:block pl-3">
-                  SOV
+                  FISH
                 </div>
               </div>
             </td>
             <td className="text-left font-normal">
-              {numberFromWei(item[0])} SOV
+              {numberFromWei(item[0])} FISH
             </td>
             <td className="text-left hidden lg:table-cell font-normal">
               {item[2].length && (
@@ -706,7 +706,7 @@ const StakesOverview: React.FC<Stakes> = ({
                   <LinkToExplorer
                     isAddress={true}
                     txHash={item[2]}
-                    className="text-gold hover:text-gold hover:underline font-medium font-montserrat tracking-normal"
+                    className="text-gold hover:text-gold hover:underline font-medium font-arbel tracking-normal"
                   />
                 </>
               )}
@@ -736,7 +736,7 @@ const StakesOverview: React.FC<Stakes> = ({
               <div className="flex flex-nowrap">
                 <button
                   type="button"
-                  className={`text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-7 px-4 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-montserrat ${
+                  className={`text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-7 px-4 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-arbel ${
                     !locked &&
                     'bg-transparent hover:bg-opacity-0 opacity-50 cursor-not-allowed hover:bg-transparent'
                   }`}
@@ -747,20 +747,20 @@ const StakesOverview: React.FC<Stakes> = ({
                 </button>
                 <button
                   type="button"
-                  className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-8 px-5 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-montserrat"
+                  className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-8 px-5 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-arbel"
                   onClick={() => onExtend(item[0], item[1])}
                 >
                   Extend
                 </button>
                 <button
                   type="button"
-                  className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-8 px-5 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-montserrat"
+                  className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-8 px-5 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-arbel"
                   onClick={() => onUnstake(item[0], item[1])}
                 >
                   Unstake
                 </button>
                 <button
-                  className={`text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-7 px-4 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-montserrat ${
+                  className={`text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-7 px-4 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-arbel ${
                     !locked &&
                     'bg-transparent hover:bg-opacity-0 opacity-50 cursor-not-allowed hover:bg-transparent'
                   }`}
@@ -853,7 +853,7 @@ function FeeBlock({ contractToken, usdTotal }: FeeProps) {
           <button
             onClick={handleWithdrawFee}
             type="button"
-            className="text-gold hover:text-gold p-0 text-normal lowercase hover:underline font-medium font-montserrat tracking-normal"
+            className="text-gold hover:text-gold p-0 text-normal lowercase hover:underline font-medium font-arbel tracking-normal"
           >
             Withdraw
           </button>

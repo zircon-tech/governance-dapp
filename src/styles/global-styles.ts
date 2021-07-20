@@ -73,7 +73,7 @@ input[type=number] {
     font-weight: 600;
     font-size: 1.75rem;
     margin: 0;
-    font-family: "Montserrat",sans-serif;
+    font-family: "ArbelRegular";
   }
   h3 {
     font-size: 18px;

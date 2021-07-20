@@ -20,7 +20,7 @@ export function WalletConnectorButton() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="justify-center items-center hidden md:flex">
+      <div className="justify-center items-center flex">
         {!connected && !address ? (
           <StyledButton
             onClick={() => connect()}
@@ -29,15 +29,13 @@ export function WalletConnectorButton() {
             {connecting && <Spinner size={22} />}
             {!connecting && (
               <>
-                <span className="hidden xl:inline">
-                  {t(translations.wallet.connect_btn)}
-                </span>
+                <span className='inline'>{t(translations.wallet.connect_btn)}</span>
               </>
             )}
           </StyledButton>
         ) : (
           <div>
-            <StyledButtonAuth className="engage-wallet w-auto justify-end items-center hidden xl:flex cursor-pointer">
+            <StyledButtonAuth className="engage-wallet w-auto justify-end items-center flex cursor-pointer">
               <span className="flex flex-nowrap flex-row items-center w-100 justify-between">
                 <span>{prettyTx(address, 4, 4)}</span>
                 <Icon
@@ -47,9 +45,6 @@ export function WalletConnectorButton() {
                 />
               </span>
             </StyledButtonAuth>
-            <StyledButton className="xl:hidden">
-              <Icon icon="user" />
-            </StyledButton>
           </div>
         )}
       </div>
@@ -63,7 +58,7 @@ const StyledButtonAuth = styled.button.attrs(_ => ({
   background: #383838;
   height: 40px;
   padding: 0 0 0 2rem;
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: 100;
   font-size: 14px;
   font-family: 'Work Sans', sans-serif;
@@ -72,7 +67,6 @@ const StyledButtonAuth = styled.button.attrs(_ => ({
 
   &:active,
   &:focus {
-    border: none;
     outline: none;
   }
 
@@ -82,12 +76,12 @@ const StyledButtonAuth = styled.button.attrs(_ => ({
     background: #686868;
     cursor: pointer;
     transition: background 0.3s;
-    color: #fec004;
-    border-radius: 0 8px 8px 0;
+    color: #32f05f;
+    border-radius: 0 6px 6px 0;
     margin-left: 1.6rem;
 
     &:hover {
-      background: rgba(0, 0, 0, 0.36);
+      background: #32f05e3b;
     }
   }
 `;
@@ -102,31 +96,28 @@ const StyledButton = styled.button.attrs(_ => ({
   height: 48px;
   text-align: center;
 
-  ${media.xl`
-    border: 1px solid;
-    white-space: nowrap;
-    width: auto;
-    margin: 0;
-    height: 40px;
-    padding: 5px 26px;
-    font-weight: 100;
-    color: #FEC004;
-    font-size: 18px;
-    font-family: 'Montserrat';
-    letter-spacing: -1px;
-    text-transform: capitalize;
-    transition: all 0.3s;
-    border-radius: 10px;
+  border: 2px solid;
+  white-space: nowrap;
+  width: auto;
+  margin: 0;
+  height: 40px;
+  padding: 5px 26px;
+  font-weight: 100;
+  color: #32f05f;
+  font-size: 18px;
+  font-family: 'ArbelRegular';
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  border-radius: 10px;
 
-    &:hover {
-      background: rgba(254,192,4, 0.25) !important;
-    }
+  &:hover {
+    background: #32f05e3b !important;
+  }
 
-    &:active,
-    &:focus {
-      background: rgba(254,192,4, 0.5) !important;
-      border: none;
-      outline: none
-    }
-  `}
+  &:active,
+  &:focus {
+    background: #32f05e3b !important;
+    outline: none;
+  }
 `;

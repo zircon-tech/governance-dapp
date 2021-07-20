@@ -208,7 +208,7 @@ const StyledTable = styled.table`
         }
       }
       a {
-        color: #fec004;
+        color: #32f05f;
       }
     }
 

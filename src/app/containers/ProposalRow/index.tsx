@@ -90,7 +90,7 @@ export function ProposalRow({ proposal }: Props) {
       <tr key={proposal.id}>
         {state === ProposalState.Active ? (
           <>
-            <td className="font-montserrat max-w-sm truncate">
+            <td className="font-arbel max-w-sm truncate">
               <Linkify newTab={true}>
                 {String(proposal.id).padStart(3, '0')} • {created?.description}
               </Linkify>
@@ -124,7 +124,7 @@ export function ProposalRow({ proposal }: Props) {
                   pathname: `/proposals/${proposal.id}/${proposal.contractName}`,
                   state: { background: location },
                 }}
-                className="text-gold hover:text-gold hover:underline font-thin font-montserrat tracking-normal"
+                className="text-gold hover:text-gold hover:underline font-thin font-arbel tracking-normal"
               >
                 View Proposal
               </Link>
@@ -132,7 +132,7 @@ export function ProposalRow({ proposal }: Props) {
           </>
         ) : (
           <>
-            <td className="font-montserrat max-w-sm truncate">
+            <td className="font-arbel max-w-sm truncate">
               <Linkify newTab={true}>
                 {String(proposal.id).padStart(3, '0')} • {created?.description}
               </Linkify>
@@ -156,7 +156,7 @@ export function ProposalRow({ proposal }: Props) {
                   pathname: `/proposals/${proposal.id}/${proposal.contractName}`,
                   state: { background: location },
                 }}
-                className="text-gold hover:text-gold hover:underline font-thin font-montserrat tracking-normal"
+                className="text-gold hover:text-gold hover:underline font-thin font-arbel tracking-normal"
               >
                 View Proposal
               </Link>

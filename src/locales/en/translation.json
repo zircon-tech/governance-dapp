@@ -9,18 +9,18 @@
     "liquidationPrice": "Liquidation Price",
     "interestApr": "Interest APR"
   },
-  "title": "Sovryn",
+  "title": "BabelFish",
   "announcement": {
-    "message": "Sovryn has just lifted transaction limits (hooray!). This means you can now take any position size. Please be aware, however, since the limits were only just removed, liquidity in the system may be low initially."
+    "message": "BabelFish has just lifted transaction limits (hooray!). This means you can now take any position size. Please be aware, however, since the limits were only just removed, liquidity in the system may be low initially."
   },
   "homePage": {
     "title": "Home Page",
-    "meta": "Sovryn Homepage",
+    "meta": "BabelFish Homepage",
     "lend": "Lend",
     "trade": "Trade"
   },
   "hintHowToConnect": {
-    "hintOne": "Before you can trade and lend with Sovryn, you need to connect to the RSK network.",
+    "hintOne": "Before you can trade and lend with BabelFish, you need to connect to the RSK network.",
     "hintTwo": "Get instructions on how to connect with <0>Metamask</0> or <1>Nifty</1> and then connect your wallet:"
   },
   "serviceWorkerToaster": {
@@ -39,7 +39,7 @@
   "tradingPage": {
     "meta": {
       "title": "Trading",
-      "description": "Trade with Sovryn."
+      "description": "Trade with BabelFish."
     },
     "email": {
       "optin": {
@@ -127,24 +127,24 @@
   },
   "wallet": {
     "btn": "Connect Wallet",
-    "connect_btn": "Engage wallet",
+    "connect_btn": "Connect Wallet",
     "disconnect": "Disconnect",
     "my_wallet": "My Wallet",
     "referrals": "Refer a friend"
   },
   "hintDialog": {
-    "title": "Sovryn Tips"
+    "title": "BabelFish Tips"
   },
   "footer": {
     "title": "Powered by <0>Bitcoin</0>",
     "notice_1": "Only you control and have access to your wealth, any actions you take could cause a potential loss of funds.",
     "notice_2": "Particularly please be sure to check all transaction fee prices before proceeding as third party wallets may automatically present high fees.",
     "notice_3": "Please visit our <0>FAQ</0> if you have any questions.",
-    "notice_4": "If you’re new to DeFi, here is the <0>tutorial</0> on how to use SOVRYN."
+    "notice_4": "If you’re new to DeFi, here is the <0>tutorial</0> on how to use BabelFish."
   },
   "mainMenu": {
-    "dapp": "Sovryn Dapp",
-    "buySov": "Buy SOV",
+    "dapp": "BabelFish Dapp",
+    "buySov": "Buy FISH",
     "trade": "Trade",
     "swap": "Swap",
     "marginTrade": "Margin Trading",
@@ -152,7 +152,7 @@
     "lend": "Lend",
     "borrow": "Borrow",
     "liquidity": "Liquidity-mining",
-    "reward": "Reward SOV",
+    "reward": "Reward FISH",
     "staking": "Staking",
     "governance": "Governance",
     "wallet": "Portfolio",
@@ -244,14 +244,14 @@
     "placeholder": "Select something"
   },
   "hintHowToTopUp": {
-    "hintOne": "You're connected! To trade and lend with Sovryn, you will need some Bitcoin on the RSK platform.",
+    "hintOne": "You're connected! To trade and lend with BabelFish, you will need some Bitcoin on the RSK platform.",
     "hintTwo": "Top up your wallet at",
     "hintThree": "and get started!"
   },
   "notificationFormContainer": {
     "want": "Want to receive email notifications about margin calls and liquidated positions?",
     "update": "Update the name or email address associated with this wallet address.",
-    "receive": "I would like to receive emails about updates and new features from Sovryn",
+    "receive": "I would like to receive emails about updates and new features from BabelFish",
     "emailSettingsBtn_update": "Update email settings",
     "emailSettingsBtn_get": "Get email notifications",
     "dialog": {
@@ -276,10 +276,10 @@
     "updated_success_user": "Your details have been updated."
   },
   "whiteListedNotification": {
-    "text": "Currently Sovryn is available for invited users only and your wallet is not yet whitelisted. All interactions is disabled until you switch to whitelisted wallet or get whitelisted for current one."
+    "text": "Currently BabelFish is available for invited users only and your wallet is not yet whitelisted. All interactions is disabled until you switch to whitelisted wallet or get whitelisted for current one."
   },
   "limitsNotification": {
-    "text": "Sovryn has just lifted transaction limits (hooray!). This means you can now take any position size. Please be aware, however, since the limits were only just removed, liquidity in the system may be low initially."
+    "text": "BabelFish has just lifted transaction limits (hooray!). This means you can now take any position size. Please be aware, however, since the limits were only just removed, liquidity in the system may be low initially."
   },
   "lend": {
     "history": {
@@ -318,7 +318,7 @@
     "text": "You do not have any active trades.",
     "info": {
       "line_1": "Need help making a transaction? Read our guide on ",
-      "line_2": " how to trade and lend with Sovryn",
+      "line_2": " how to trade and lend with BabelFish",
       "line_3": "."
     }
   },
@@ -444,7 +444,7 @@
     },
     "speech_qr_code": "Scan QR code with a wallet-connect compatible wallet",
     "input_settings": {
-      "title": "SOV TOKEN SETTINGS",
+      "title": "FISH TOKEN SETTINGS",
       "token_address": "Token Contract Address",
       "symbol": "Symbol",
       "decimals": "Decimals"
@@ -468,25 +468,25 @@
         "banner": "For any assistance, reach out to the community"
       },
       "4": {
-        "title": "How to connect SOV to your Metamask wallet",
+        "title": "How to connect FISH to your Metamask wallet",
         "banner": "For any assistance, reach out to the community"
       }
     }
   },
   "mobileNotReady": {
     "submit": "Submit",
-    "p1": "The Sovryn user experience is not yet optimized for mobile.",
+    "p1": "The BabelFish user experience is not yet optimized for mobile.",
     "p2": "Register your email to hear when our mobile version is ready!",
     "p3": "Until then, why not try the desktop version?",
     "errorText": "Error submitting form",
     "success": "Success!",
-    "successText": "We will contact you as soon as Sovryn Mobile is live."
+    "successText": "We will contact you as soon as BabelFish Mobile is live."
   },
   "fastBTC": {
     "screens": {
       "1": {
         "title": "You Are Connected!",
-        "p1": "In order to borrow/lend and trade on Sovryn, you must first enable your Bitcoin by transferring them to your rsk wallet.",
+        "p1": "In order to borrow/lend and trade on BabelFish, you must first enable your Bitcoin by transferring them to your rsk wallet.",
         "p2": "You do this by creating a unique btc address that pegs to your RSK address, supercharging your BTC into RBTC.",
         "createAddress": "Create Address"
       },
@@ -569,7 +569,7 @@
   "salesPage": {
     "meta": {
       "title": "Presale",
-      "description": "SOV Presale Page"
+      "description": "FISH Presale Page"
     }
   },
   "userAssets": {
@@ -586,7 +586,7 @@
       "deposit": "Top-Up",
       "swap": "Swap",
       "trade": "Trade",
-      "claimSov": "Claim SOV"
+      "claimSov": "Claim FISH"
     }
   },
   "topUpHistory": {
@@ -686,10 +686,10 @@
   },
   "notifyDialog": {
     "heading": "Caution… No Really",
-    "acceptTerms": "I have read and understand that I am responsible for my own Sovrynity",
+    "acceptTerms": "I have read and understand that I am responsible for my own BabelFishity",
     "salesBtn": "I Understand",
     "generalAlert": {
-      "p1": "SOVRYN is a decentralized bitcoin trading and lending platform, the first of it kind!",
+      "p1": "BabelFish is a decentralized bitcoin trading and lending platform, the first of it kind!",
       "p2": "Only you control and have access to your wealth, any actions you take could cause a potential loss of funds.",
       "p3": "Make sure to check all transaction fee prices before proceeding as third party wallets may automatically present high fees.",
       "p4_1": "Please visit our ",
@@ -697,11 +697,11 @@
       "p4_3": " if you have any questions.",
       "p5_1": "If you’re new to DeFi, here is the ",
       "p5_2": "tutorial",
-      "p5_3": " on how to use SOVRYN."
+      "p5_3": " on how to use BabelFish."
     },
     "metamaskAlert": {
       "p1": "We noticed you have MetaMask installed.",
-      "p2_1": "There are known issues when using MetaMask with SOVRYN. We suggest using a browser wallet like ",
+      "p2_1": "There are known issues when using MetaMask with BabelFish. We suggest using a browser wallet like ",
       "p2_2": "Liquality Wallet",
       "p2_3": " or ",
       "p2_4": "Nifty Wallet",
@@ -717,7 +717,7 @@
         },
         "price": {
           "title": "Shows price as ETH instead of (r)BTC",
-          "description": "currently we suggest checking your token balances in the SOVRYN My Wallet section."
+          "description": "currently we suggest checking your token balances in the BabelFish My Wallet section."
         }
       }
     }
