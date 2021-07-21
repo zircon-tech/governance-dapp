@@ -24,7 +24,7 @@ export class AssetsDictionary {
         Asset.BPRO,
         new AssetDetails(Asset.BPRO, 'BPRO', 'BitPro', 18, bproIcon),
       ],
-      [Asset.SOV, new AssetDetails(Asset.SOV, 'SOV', 'Sovryn', 18, sovIcon)],
+      [Asset.SOV, new AssetDetails(Asset.SOV, 'FISH', 'BabelFish', 18, sovIcon)],
     ],
   );
 

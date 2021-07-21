@@ -82,7 +82,7 @@ export function StakePage() {
       </Helmet>
       <Header />
       <main>
-        <div className="bg-gray-700 tracking-normal">
+        <div className="bg-black tracking-normal">
           <div className="container">
             <h2 className="text-white pt-8 pb-5 pl-10">Staking/Vesting</h2>
             <div className="w-full bg-gray-light text-center rounded-b shadow p-3">
@@ -393,7 +393,7 @@ function InnerStakePage() {
       </Helmet>
       <Header />
       <main>
-        <div className="bg-gray-700 tracking-normal">
+        <div className="bg-black tracking-normal">
           <div className="container">
             <h2 className="text-white pt-8 pb-5 pl-10">Staking/Vesting</h2>
             <div className="xl:flex items-stretch justify-around mt-2">
@@ -475,7 +475,7 @@ function InnerStakePage() {
                     to={'/'}
                     className="bg-gold bg-opacity-10 hover:text-gold focus:outline-none focus:bg-opacity-50 hover:bg-opacity-40 transition duration-500 ease-in-out px-8 py-3 text-lg text-gold hover:text-gray-light border transition-colors duration-300 ease-in-out border-gold rounded-xl hover:no-underline no-underline inline-block"
                   >
-                    View Governance
+                    VIEW GOVERNANCE
                   </Link>
                 </div>
               </div>
@@ -837,10 +837,13 @@ function FeeBlock({ contractToken, usdTotal }: FeeProps) {
                   </>
                 }
               >
-                <>i{contractToken.asset} (?)</>
+                {/* <>i{contractToken.asset} (?)</> */}
+                FISH
               </Tooltip>
             ) : (
-              <>{contractToken.asset}</>
+              //uncomment later
+              // <>{contractToken.asset}</>
+              'FISH'
             )}
           </div>
           <div className="w-1/2 ml-6">

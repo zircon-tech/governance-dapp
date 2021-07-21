@@ -15,14 +15,14 @@ export function HomePage() {
     <>
       <Helmet>
         <title>BabelFish Bitocracy</title>
-        <meta name="description" content="SOVRYN Bitocracy" />
+        <meta name="description" />
       </Helmet>
       <Header />
       <main>
         <div>
           <div className="container">
             <h2 className="text-white text-center pt-5 pb-8 tracking-normal">
-              BabelFish Bitocracy
+              BABELFISH BITOCRACY
             </h2>
             <div className="flex justify-between items-center">
               <h2 className="font-semibold mb-2 tracking-normal">
