@@ -24,7 +24,7 @@ export function ExtendStakeForm(props: Props) {
   return (
     <>
       <h3 className="text-center mb-10 leading-10 text-3xl">
-        Extend SOV Stake
+        Extend FISH Stake
       </h3>
       <div className="text-gray-5 mb-4 md:px-9 tracking-normal text-xs">
         Previous until:
@@ -50,7 +50,7 @@ export function ExtendStakeForm(props: Props) {
               defaultValue={props.amount}
             />
             <span className="text-theme-white text-md font-semibold absolute top-3 right-5 leading-4">
-              SOV
+              FISH
             </span>
           </div>
 
@@ -92,7 +92,7 @@ export function ExtendStakeForm(props: Props) {
             >
               {numberFromWei(props.sovBalanceOf.value).toLocaleString()}
             </span>{' '}
-            SoV
+            FISH
             {Number(props.votePower) > 0 && (
               <>
                 <br />

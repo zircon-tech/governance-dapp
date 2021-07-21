@@ -44,14 +44,14 @@ export function WithdrawVesting(props: Props) {
 
   return (
     <>
-      <h3 className="text-center mb-10 leading-10 text-3xl">Unstake SOV</h3>
+      <h3 className="text-center mb-10 leading-10 text-3xl">Unstake FISH</h3>
       <form onSubmit={submitForm}>
         <div className="mb-9 md:px-9 tracking-normal">
           <label
             className="leading-4 block text-theme-white text-md font-medium mb-2"
             htmlFor="address"
           >
-            Receive SOV at:
+            Receive FISH at:
           </label>
           <div className="flex space-x-4 relative">
             <input
@@ -68,7 +68,7 @@ export function WithdrawVesting(props: Props) {
             className="block text-theme-white text-md font-medium mb-2 mt-8"
             htmlFor="voting-power"
           >
-            Unlocked SOV:
+            Unlocked FISH:
           </label>
           <div className="flex space-x-4">
             <div className="border text-theme-white appearance-none text-md font-semibold text-center h-10 rounded-lg w-full py-2 px-3 bg-transparent tracking-normal focus:outline-none focus:shadow-outline">

@@ -180,13 +180,13 @@ const HistoryTable: React.FC<History> = ({ items }) => {
             <td>
               <div className="username flex items-center">
                 <div>
-                  <img src={logoSvg} className="ml-3 mr-3" alt="sov" />
+                  <img src={logoSvg} className="ml-3 mr-3" alt="fish" />
                 </div>
-                <div className="text-sm font-normal hidden xl:block">SOV</div>
+                <div className="text-sm font-normal hidden xl:block">FISH</div>
               </div>
             </td>
             <td className="text-left font-normal">
-              {numberFromWei(item.returnValues.amount)} SOV
+              {numberFromWei(item.returnValues.amount)} FISH
               <br />
             </td>
             <td className="text-left hidden lg:table-cell font-normal relative">
@@ -207,7 +207,7 @@ const HistoryTable: React.FC<History> = ({ items }) => {
               </div>
             </td>
             <td className="text-left hidden lg:table-cell font-normal">
-              {numberFromWei(item.returnValues.totalStaked)} SOV
+              {numberFromWei(item.returnValues.totalStaked)} FISH
             </td>
           </tr>
         );

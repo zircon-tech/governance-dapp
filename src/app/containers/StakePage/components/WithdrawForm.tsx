@@ -29,7 +29,7 @@ export function WithdrawForm(props: Props) {
 
   const modalTitle = showConfirmForm
     ? 'Are you sure you want to unstake?'
-    : 'Unstake SOV';
+    : 'Unstake FISH';
 
   const getEvent = useCallback(
     async amount => {
@@ -79,7 +79,7 @@ export function WithdrawForm(props: Props) {
                 Unstaking now invokes a slashing penalty that will cost you:
               </p>
               <div className="text-center text-lg font-semibold">
-                {numberFromWei(forfeitWithdraw).toFixed(2) + ' SOV'}
+                {numberFromWei(forfeitWithdraw).toFixed(2) + ' FISH'}
               </div>
             </div>
 
@@ -120,7 +120,7 @@ export function WithdrawForm(props: Props) {
                   defaultValue={props.amount}
                 />
                 <span className="text-theme-white text-md font-semibold absolute top-3 right-5 leading-4">
-                  SOV
+                  FISH
                 </span>
               </div>
 
@@ -143,7 +143,7 @@ export function WithdrawForm(props: Props) {
                   }}
                 />
                 <span className="text-black text-md font-semibold absolute top-3 right-5 leading-4">
-                  SOV
+                  FISH
                 </span>
               </div>
               <div className="flex rounded border border-theme-blue mt-4">
@@ -218,7 +218,7 @@ export function WithdrawForm(props: Props) {
                         forfeitPercent +
                         '% ≈ ' +
                         numberFromWei(forfeitWithdraw).toFixed(2) +
-                        ' SOV'
+                        ' FISH'
                       }
                     />
                   </div>

@@ -36,7 +36,7 @@ export function IncreaseStakeForm(props: Props) {
               defaultValue={props.amount}
             />
             <span className="text-theme-white text-md font-semibold absolute top-3 right-5 leading-4">
-              SOV
+              FISH
             </span>
           </div>
 
@@ -56,7 +56,7 @@ export function IncreaseStakeForm(props: Props) {
               onChange={e => props.onChangeAmount(handleNumberInput(e))}
             />
             <span className="text-black text-md font-semibold absolute top-3 right-5 leading-4">
-              SOV
+              FISH
             </span>
           </div>
           <div className="flex rounded border border-theme-blue mt-4">

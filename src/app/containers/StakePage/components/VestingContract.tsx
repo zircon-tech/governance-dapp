@@ -102,7 +102,7 @@ export function VestingContract(props: Props) {
           <td>
             <div className="assetname flex items-center">
               <div>
-                <img src={logoSvg} className="ml-3 mr-3" alt="sov" />
+                <img src={logoSvg} className="ml-3 mr-3" alt="fish" />
               </div>
               <div className="text-sm font-normal hidden xl:block pl-3">
                 {props.type === 'genesis' && 'CSOV Genesis'}

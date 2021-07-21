@@ -85,7 +85,7 @@ export function DelegationDialog() {
 
         {Number(balance.value) > 0 && (
           <Text tagName="p" ellipsize className="mb-3 text-sm">
-            Staked SOV:{' '}
+            Staked FISH:{' '}
             {Number(fromWei(balance.value)).toLocaleString(undefined, {
               minimumFractionDigits: 2,
               maximumFractionDigits: 4,
@@ -95,7 +95,7 @@ export function DelegationDialog() {
         {balance.vestingContract === genesisAddress &&
           balance.teamVestingContract === genesisAddress && (
             <Text tagName="p" ellipsize className="mb-3 text-sm">
-              Vested SOV:{' '}
+              Vested FISH:{' '}
               {Number(0).toLocaleString(undefined, {
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 4,
@@ -104,7 +104,7 @@ export function DelegationDialog() {
           )}
         {balance.vestingContract !== genesisAddress && (
           <Text tagName="p" ellipsize className="mb-3 text-sm">
-            Vested SOV:{' '}
+            Vested FISH:{' '}
             {Number(fromWei(balance.vestedValue)).toLocaleString(undefined, {
               minimumFractionDigits: 2,
               maximumFractionDigits: 4,
@@ -113,7 +113,7 @@ export function DelegationDialog() {
         )}
         {balance.teamVestingContract !== genesisAddress && (
           <Text tagName="p" ellipsize className="mb-3 text-sm">
-            Vested SOV (Team):{' '}
+            Vested FISH (Team):{' '}
             {Number(fromWei(balance.teamVestedValue)).toLocaleString(
               undefined,
               {
