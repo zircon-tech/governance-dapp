@@ -397,7 +397,7 @@ function InnerStakePage() {
           <div className="container">
             <h2 className="text-white pt-8 pb-5 pl-10">Staking/Vesting</h2>
             <div className="xl:flex items-stretch justify-around mt-2">
-              <div className="mx-2 bg-gray-800 staking-box p-8 pb-6 rounded-2xl w-full xl:w-1/4 mb-5 xl:mb-0">
+              <div className="mx-2 bg-gray-800 staking-box p-8 pb-6 rounded-2xl w-full xl:w-1/3 mb-5 xl:mb-0">
                 <p className="text-lg -mt-1">Total staked FISH</p>
                 <p
                   className={`text-4-5xl mt-2 mb-6 ${
@@ -445,7 +445,7 @@ function InnerStakePage() {
                 )}
               </div>
 
-              <div className="mx-2 bg-gray-800 staking-box p-8 pb-6 rounded-2xl w-full xl:w-1/4 text-sm mb-5 xl:mb-0">
+              <div className="mx-2 bg-gray-800 staking-box p-8 pb-6 rounded-2xl w-full xl:w-1/3 text-sm mb-5 xl:mb-0">
                 <p className="text-lg -mt-1">Total earned fees Available</p>
                 <p className="text-4-5xl mt-2 mb-6">
                   ≈ {numberToUSD(usdTotal, 4)}
@@ -461,7 +461,7 @@ function InnerStakePage() {
                 })}
               </div>
 
-              <div className="mx-2 bg-gray-800 staking-box p-8 pb-6 rounded-2xl w-full xl:w-1/4 mb-5 xl:mb-0">
+              <div className="mx-2 bg-gray-800 staking-box p-8 pb-6 rounded-2xl w-full xl:w-1/3 mb-5 xl:mb-0">
                 <p className="text-lg -mt-1">Combined Voting Power</p>
                 <p
                   className={`text-4-5xl mt-2 mb-6 ${
@@ -820,8 +820,8 @@ function FeeBlock({ contractToken, usdTotal }: FeeProps) {
   return (
     <>
       {Number(currency.value) > 0 && (
-        <div className="flex justify-between items-center mb-1 mt-1 leading-6">
-          <div className="w-1/5">
+        <div className="flex justify-start items-center mb-1 mt-1 leading-6">
+          <div className="">
             {contractToken.asset !== Asset.SOV ? (
               <Tooltip
                 content={
@@ -846,7 +846,7 @@ function FeeBlock({ contractToken, usdTotal }: FeeProps) {
               'FISH'
             )}
           </div>
-          <div className="w-1/2 ml-6">
+          <div className="ml-2">
             {numberFromWei(currency.value).toFixed(6)} ≈{' '}
             <LoadableValue
               value={numberToUSD(Number(weiToFixed(dollarValue, 4)), 2)}
@@ -856,7 +856,7 @@ function FeeBlock({ contractToken, usdTotal }: FeeProps) {
           <button
             onClick={handleWithdrawFee}
             type="button"
-            className="text-gold hover:text-gold p-0 text-normal lowercase hover:underline font-medium font-arbel tracking-normal"
+            className="text-gold hover:text-gold p-0 text-normal lowercase hover:underline font-medium font-arbel tracking-normal ml-2"
           >
             Withdraw
           </button>

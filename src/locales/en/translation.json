@@ -126,8 +126,8 @@
     "btn_max": "Max"
   },
   "wallet": {
-    "btn": "Connect Wallet",
-    "connect_btn": "Connect Wallet",
+    "btn": "CONNECT WALLET",
+    "connect_btn": "CONNECT WALLET",
     "disconnect": "Disconnect",
     "my_wallet": "My Wallet",
     "referrals": "Refer a friend"

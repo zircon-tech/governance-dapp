@@ -109,8 +109,8 @@
     "btn_max": "Max"
   },
   "wallet": {
-    "btn": "Conectar Cartera",
-    "connect_btn": "Conectar Cartera",
+    "btn": "CONECTAR CARTERA",
+    "connect_btn": "CONECTAR CARTERA",
     "disconnect": "Desconectar"
   },
   "hintDialog": {

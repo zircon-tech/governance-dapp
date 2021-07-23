@@ -2,7 +2,7 @@ import { MenuItem } from '@blueprintjs/core';
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import styled from 'styled-components/macro';
 import logoSvg from 'assets/images/sovryn-logo-white.svg';
 import { translations } from 'locales/i18n';
@@ -20,6 +20,7 @@ export function Header() {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const history = useHistory();
+  const location = useLocation();
   const node = useRef(null as any);
   const StyledMenu = styled.nav.attrs(_ => ({ open: open }))`
     display: flex;
@@ -149,6 +150,42 @@ export function Header() {
     };
   }, [open]);
 
+  const StyledButton = styled.button.attrs(_ => ({
+    type: 'button',
+  }))`
+    border: none;
+    background: none;
+    color: var(--white);
+    width: 48px;
+    height: 48px;
+    text-align: center;
+
+    border: 2px solid;
+    white-space: nowrap;
+    width: auto;
+    margin: 0;
+    height: 40px;
+    padding: 5px 26px;
+    font-weight: 100;
+    color: #32f05f;
+    font-size: 18px;
+    font-family: 'ArbelRegular';
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    border-radius: 10px;
+
+    &:hover {
+      background: #32f05e3b !important;
+    }
+
+    &:active,
+    &:focus {
+      background: #32f05e3b !important;
+      outline: none;
+    }
+  `;
+  console.log(location.pathname);
   return (
     <>
       {CHAIN_ID !== chainId && (
@@ -164,10 +201,28 @@ export function Header() {
       )}
       <header className="bg-black mb-2">
         <div className="flex min-h justify-between items-center mb-4 px-4 pt-2 pb-2">
-            <a href="https://babelfish.netlify.app" rel="noopener noreferrer">
-              <StyledLogo src={logoSvg} />
-            </a>
+          <a
+            href="https://babelfish.netlify.app"
+            rel="noopener noreferrer"
+            className="flex items-center hover:no-underline text-white font-normal"
+          >
+            <StyledLogo src={logoSvg} />{' '}
+            <span className="ml-2 text-xl no-underline">BabelFish.Money</span>
+          </a>
           <div className="flex justify-start items-center">
+            <div className="mr-2">
+              <StyledButton
+                onClick={() => {
+                  location.pathname === '/stake'
+                    ? history.push('/')
+                    : history.push('/stake');
+                }}
+                className="flex justify-center items-center"
+              >
+                {location.pathname === '/stake' ? 'GO TO GOVERNANCE ' : 'GO TO STAKE'}{' '}
+                
+              </StyledButton>
+            </div>
             <WalletConnectorButton />
           </div>
         </div>
