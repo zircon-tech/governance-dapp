@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useHistory, useLocation } from 'react-router-dom';
 import styled from 'styled-components/macro';
-import { ReactComponent as SovLogo } from 'assets/images/sovryn-logo-alpha.svg';
+import logoSvg from 'assets/images/sovryn-logo-white.svg';
 import { translations } from 'locales/i18n';
 
 import { media } from '../../../styles/media';
@@ -156,15 +156,16 @@ export function Header() {
     border: none;
     background: none;
     color: var(--white);
-    width: 48px;
     height: 50px;
     text-align: center;
     border: 2px solid;
     white-space: nowrap;
     width: fit-content;
-    padding: 0 20px;
     margin: 0;
+    padding: 0px 20px;
+    font-weight: 100;
     color: #32f05f;
+    font-weight: bold;
     font-size: 16px;
     font-family: 'ArbelRegular';
     letter-spacing: -1px;
@@ -173,12 +174,12 @@ export function Header() {
     border-radius: 10px;
 
     &:hover {
-      background: #32f05e1d !important;
+      background: #32f05e22 !important;
     }
 
     &:active,
     &:focus {
-      background: #32f05e1d !important;
+      background: #32f05e22 !important;
       outline: none;
     }
   `;
@@ -198,17 +199,14 @@ export function Header() {
       )}
       <header className="bg-black mb-2">
         <div className="flex min-h justify-between items-center mb-4 px-4 pt-2 pb-2">
-          <div className="xl:hidden">
-            <div ref={node}>
-              <Burger open={open} setOpen={setOpen} />
-              <Menu open={open} setOpen={setOpen} />
-            </div>
-          </div>
-          <div className="xl:flex flex-row items-center">
-            <a href="https://live.sovryn.app" rel="noopener noreferrer">
-              <StyledLogo />
-            </a>
-          </div>
+          <a
+            href="https://babelfish.netlify.app"
+            rel="noopener noreferrer"
+            className="flex items-center hover:no-underline text-white font-normal"
+          >
+            <StyledLogo src={logoSvg} />{' '}
+            <span className="ml-2 text-xl no-underline">BabelFish.Money</span>
+          </a>
           <div className="flex justify-start items-center">
             <div className="mr-2">
               <StyledButton
@@ -219,8 +217,9 @@ export function Header() {
                 }}
                 className="flex justify-center items-center"
               >
-                {location.pathname === '/stake' ? 'GO TO GOVERNANCE ' : 'GO TO STAKE'}{' '}
-                
+                {location.pathname === '/stake'
+                  ? 'GO TO GOVERNANCE '
+                  : 'GO TO STAKE'}{' '}
               </StyledButton>
             </div>
             <WalletConnectorButton />
@@ -230,21 +229,15 @@ export function Header() {
     </>
   );
 }
-const StyledLogo = styled(SovLogo).attrs(_ => ({
+const StyledLogo = styled.img.attrs(_ => ({
   alt: '',
 }))`
-  width: 130px;
-  height: 32px;
-  margin: 0 0 0 1rem;
-
-  // custom font for "Alpha" logo text
-  #Alpha tspan {
-    font-family: Orbitron-Medium, Orbitron;
-  }
-
+  width: 50px;
+  height: 50px;
   ${media.xl`
-    width: 216px;
-    height: 53px;
+    width: 48px;
+    height: 48px;
     margin: 0;
   `}
 `;
+
