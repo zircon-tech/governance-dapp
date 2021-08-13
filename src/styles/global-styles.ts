@@ -11,13 +11,18 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: var(--primary-font);
     font-size: 12px;
-    background-color: black;
     color: #D9D9D9;
+    font-family: 'ArbelRegular' !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-text-stroke: 0.45px;
+    background-color: rgb(12, 11, 16);
+    font-smooth: auto;
+    font-smooth: never;
+    font-smooth: always;
+    font-smooth: 2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     ${media.lg`
     font-size: 16px;
     `}

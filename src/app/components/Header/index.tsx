@@ -157,18 +157,15 @@ export function Header() {
     background: none;
     color: var(--white);
     width: 48px;
-    height: 48px;
+    height: 50px;
     text-align: center;
-
     border: 2px solid;
     white-space: nowrap;
-    width: auto;
+    width: fit-content;
+    padding: 0 20px;
     margin: 0;
-    height: 40px;
-    padding: 5px 26px;
-    font-weight: 100;
     color: #32f05f;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'ArbelRegular';
     letter-spacing: -1px;
     text-transform: capitalize;
@@ -176,12 +173,12 @@ export function Header() {
     border-radius: 10px;
 
     &:hover {
-      background: #32f05e3b !important;
+      background: #32f05e1d !important;
     }
 
     &:active,
     &:focus {
-      background: #32f05e3b !important;
+      background: #32f05e1d !important;
       outline: none;
     }
   `;

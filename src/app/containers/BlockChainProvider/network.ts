@@ -1,7 +1,7 @@
 import Web3 from 'web3';
 import ContractClass, { EventData, Contract } from 'web3-eth-contract';
 import { RevertInstructionError } from 'web3-core-helpers';
-import { walletService } from '@sovryn/react-wallet';
+import { walletService } from 'react-wallet';
 import { web3Wallets } from '@sovryn/wallet';
 import { AbiItem, toWei } from 'web3-utils';
 import {

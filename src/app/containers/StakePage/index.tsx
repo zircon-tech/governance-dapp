@@ -65,7 +65,7 @@ import { CurrentVests } from './components/CurrentVests';
 import { StyledTable } from './components/StyledTable';
 import { isAddress, toWei } from 'web3-utils';
 import { ContractName } from '../BlockChainProvider/types';
-import { walletService } from '@sovryn/react-wallet';
+import { walletService } from 'react-wallet';
 import { Tooltip } from '@blueprintjs/core';
 
 const now = new Date();

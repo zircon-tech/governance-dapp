@@ -1,4 +1,4 @@
-import { useWalletContext } from '@sovryn/react-wallet';
+import { useWalletContext } from 'react-wallet';
 
 export function useIsConnected() {
   const { address, connected } = useWalletContext();

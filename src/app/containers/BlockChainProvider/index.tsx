@@ -6,7 +6,7 @@
 
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { WalletProvider, walletService } from '@sovryn/react-wallet';
+import { WalletProvider, walletService } from 'react-wallet';
 
 import { useInjectReducer, useInjectSaga } from 'utils/redux-injectors';
 import { reducer, sliceKey, actions } from './slice';
