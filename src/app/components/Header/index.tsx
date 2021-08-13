@@ -198,7 +198,7 @@ export function Header() {
         </div>
       )}
       <header className="bg-black mb-2">
-        <div className="flex min-h justify-between items-center mb-4 px-4 pt-2 pb-2">
+        <div style={{padding: '0 20px'}} className="flex min-h justify-between items-center mb-4 pt-2 pb-2">
           <a
             href="https://babelfish.netlify.app"
             rel="noopener noreferrer"

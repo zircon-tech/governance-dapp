@@ -44,7 +44,7 @@ export function WalletConnectorButton() {
 const WalletButtonContainer = styled.div`
   font-family: 'ArbelRegular' !important;
   font-weight: 500 !important;
-  color: black !important;
+  color: black;
 `;
 
 const StyledButtonAuth = styled.button.attrs(_ => ({
@@ -61,6 +61,7 @@ const StyledButtonAuth = styled.button.attrs(_ => ({
   letter-spacing: 0;
   display: flex;
   align-items: center;
+  color: white;
   &:active,
   &:focus {
     outline: none;
