@@ -102,7 +102,7 @@ export function VestingContract(props: Props) {
           <td>
             <div className="assetname flex items-center">
               <div>
-                <img src={logoSvg} className="ml-3 mr-3" alt="sov" />
+                <img src={logoSvg} className="ml-3 mr-3" alt="fish" />
               </div>
               <div className="text-sm font-normal hidden xl:block pl-3">
                 {props.type === 'genesis' && 'CSOV Genesis'}
@@ -126,7 +126,7 @@ export function VestingContract(props: Props) {
                   <LinkToExplorer
                     isAddress={true}
                     txHash={delegate}
-                    className={`text-gold hover:text-gold hover:underline font-medium font-montserrat tracking-normal ${
+                    className={`text-gold hover:text-gold hover:underline font-medium font-arbel tracking-normal ${
                       delegateLoading && 'skeleton'
                     }`}
                   />
@@ -179,7 +179,7 @@ export function VestingContract(props: Props) {
           <td className="md:text-left lg:text-right hidden md:table-cell max-w-15 min-w-15">
             <div className="flex flex-nowrap justify-end">
               <button
-                className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-7 px-4 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-montserrat"
+                className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-7 px-4 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-arbel"
                 onClick={() => {
                   dispatch(actions.vestingType(props.type));
                   dispatch(actions.toggleDelagationDialog(true));
@@ -189,7 +189,7 @@ export function VestingContract(props: Props) {
               </button>
               <button
                 type="button"
-                className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-12 px-4 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-montserrat"
+                className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-12 px-4 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-arbel"
                 onClick={() => setShowWithdraw(true)}
                 disabled={
                   !props.vestingAddress ||

@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'ArbelRegular';
+  src: local('./ArbelHagildaRegular'),
+    url(./ArbelHagildaRegular.otf) format('opentype');
+}

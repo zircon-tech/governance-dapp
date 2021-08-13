@@ -11,8 +11,7 @@ module.exports = {
       xl: '1200px',
     },
     fontFamily: {
-      montserrat: ['Montserrat', 'sans-serif'],
-      worksans: ['Work Sans', 'sans-serif'],
+      arbel: ['ArbelRegular'],
     },
     fontSize: {
       'xs': '.75rem',
@@ -65,7 +64,7 @@ module.exports = {
         light: '#181818',
         lighter: '#161616',
       },
-      gold: '#FEC004',
+      gold: '#32f05f',
       white: 'white',
       black: 'black',
       turquoise: '#4ECDC4',

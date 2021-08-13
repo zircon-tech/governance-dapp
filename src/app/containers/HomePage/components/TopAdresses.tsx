@@ -28,7 +28,7 @@ export function TopAdresses() {
                   </th>
                 </tr>
               </thead>
-              <tbody className="mt-5 font-montserrat">
+              <tbody className="mt-5 font-arbel">
                 <tr>
                   <td>
                     <div className="username flex items-center">

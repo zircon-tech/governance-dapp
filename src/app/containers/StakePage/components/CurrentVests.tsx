@@ -28,7 +28,7 @@ export function CurrentVests() {
                 </th>
               </tr>
             </thead>
-            <tbody className="mt-5 font-montserrat text-xs">
+            <tbody className="mt-5 font-arbel text-xs">
               {loading && !items.length && (
                 <tr>
                   <td colSpan={99} className="text-center font-normal">

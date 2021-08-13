@@ -7,7 +7,7 @@
 
 @layer base {
     body {
-        @apply font-montserrat text-white min-h-full bg-gray-light;
+        @apply font-arbel text-white min-h-full bg-gray-light;
         font-size: 16px;
         letter-spacing: 1.2px;
         line-height: 1.5;

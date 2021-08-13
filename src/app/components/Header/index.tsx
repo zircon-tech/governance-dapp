@@ -2,7 +2,7 @@ import { MenuItem } from '@blueprintjs/core';
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import styled from 'styled-components/macro';
 import { ReactComponent as SovLogo } from 'assets/images/sovryn-logo-alpha.svg';
 import { translations } from 'locales/i18n';
@@ -20,6 +20,7 @@ export function Header() {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const history = useHistory();
+  const location = useLocation();
   const node = useRef(null as any);
   const StyledMenu = styled.nav.attrs(_ => ({ open: open }))`
     display: flex;
@@ -107,11 +108,11 @@ export function Header() {
 
   const pages = [
     {
-      to: 'https://live.sovryn.app/',
+      to: 'https://babelfish.netlify.app',
       title: t(translations.mainMenu.dapp),
     },
     {
-      to: 'https://wiki.sovryn.app/en/sovryn-dapp/faq-dapp',
+      to: 'https://babelfish.money/',
       title: t(translations.mainMenu.help),
     },
   ];
@@ -149,6 +150,42 @@ export function Header() {
     };
   }, [open]);
 
+  const StyledButton = styled.button.attrs(_ => ({
+    type: 'button',
+  }))`
+    border: none;
+    background: none;
+    color: var(--white);
+    width: 48px;
+    height: 48px;
+    text-align: center;
+
+    border: 2px solid;
+    white-space: nowrap;
+    width: auto;
+    margin: 0;
+    height: 40px;
+    padding: 5px 26px;
+    font-weight: 100;
+    color: #32f05f;
+    font-size: 18px;
+    font-family: 'ArbelRegular';
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    border-radius: 10px;
+
+    &:hover {
+      background: #32f05e3b !important;
+    }
+
+    &:active,
+    &:focus {
+      background: #32f05e3b !important;
+      outline: none;
+    }
+  `;
+  console.log(location.pathname);
   return (
     <>
       {CHAIN_ID !== chainId && (
@@ -176,15 +213,18 @@ export function Header() {
             </a>
           </div>
           <div className="flex justify-start items-center">
-            <a
-              href="https://wiki.sovryn.app/en/sovryn-dapp/faq-dapp"
-              rel="noopener noreferrer"
-              className="nav-item mr-2 hidden xl:block"
-            >
-              {t(translations.mainMenu.help)}
-            </a>
             <div className="mr-2">
-              <LanguageToggle />
+              <StyledButton
+                onClick={() => {
+                  location.pathname === '/stake'
+                    ? history.push('/')
+                    : history.push('/stake');
+                }}
+                className="flex justify-center items-center"
+              >
+                {location.pathname === '/stake' ? 'GO TO GOVERNANCE ' : 'GO TO STAKE'}{' '}
+                
+              </StyledButton>
             </div>
             <WalletConnectorButton />
           </div>

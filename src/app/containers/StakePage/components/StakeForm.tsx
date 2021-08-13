@@ -21,7 +21,7 @@ interface Props {
 export function StakeForm(props: Props) {
   return (
     <>
-      <h3 className="text-center mb-10 leading-10 text-3xl">Stake SOV</h3>
+      <h3 className="text-center mb-10 leading-10 text-3xl">Stake FISH</h3>
       <form onSubmit={props.handleSubmit}>
         <div className="mb-9 md:px-9 tracking-normal">
           <label
@@ -40,7 +40,7 @@ export function StakeForm(props: Props) {
               onChange={e => props.onChangeAmount(handleNumberInput(e))}
             />
             <span className="text-black text-md font-semibold absolute top-3 right-5 leading-4">
-              SOV
+              FISH
             </span>
           </div>
           <div className="flex rounded border border-theme-blue mt-4">

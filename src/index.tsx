@@ -19,6 +19,7 @@ import '@blueprintjs/select/lib/css/blueprint-select.css';
 import '@sovryn/react-wallet/index.css';
 import './styles/sass/_genesis-sale.scss';
 import './styles/sass/_custom-styles.scss';
+import './styles/fonts/styles.css';
 // Import root app
 import { App } from 'app';
 

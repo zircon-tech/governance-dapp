@@ -14,15 +14,15 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>SOVRYN Bitocracy</title>
-        <meta name="description" content="SOVRYN Bitocracy" />
+        <title>BabelFish Bitocracy</title>
+        <meta name="description" />
       </Helmet>
       <Header />
       <main>
         <div>
           <div className="container">
             <h2 className="text-white text-center pt-5 pb-8 tracking-normal">
-              SOVRYN Bitocracy
+              BABELFISH BITOCRACY
             </h2>
             <div className="flex justify-between items-center">
               <h2 className="font-semibold mb-2 tracking-normal">
@@ -226,7 +226,7 @@ const StyledTable = styled.table`
         }
       }
       a {
-        color: #fec004;
+        color: #32f05f;
       }
     }
 

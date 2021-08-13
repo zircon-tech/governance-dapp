@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: var(--primary-font);
     font-size: 12px;
-    background-color: var(--background);
+    background-color: black;
     color: #D9D9D9;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -73,7 +73,7 @@ input[type=number] {
     font-weight: 600;
     font-size: 1.75rem;
     margin: 0;
-    font-family: "Montserrat",sans-serif;
+    font-family: "ArbelRegular";
   }
   h3 {
     font-size: 18px;

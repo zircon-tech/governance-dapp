@@ -109,7 +109,7 @@ export function HistoryEventsTable() {
                 <th className="text-left hidden lg:table-cell">Total Staked</th>
               </tr>
             </thead>
-            <tbody className="mt-5 font-montserrat text-xs">
+            <tbody className="mt-5 font-arbel text-xs">
               {eventsHistory.length > 0 && (
                 <HistoryTable items={eventsHistory} />
               )}
@@ -149,7 +149,7 @@ export function HistoryEventsTable() {
                         <td colSpan={4} className="text-center font-normal">
                           <button
                             type="button"
-                            className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-7 px-4 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-montserrat"
+                            className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mr-1 xl:mr-7 px-4 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-arbel"
                             onClick={() => setViewHistory(true)}
                           >
                             Click to view history
@@ -180,13 +180,13 @@ const HistoryTable: React.FC<History> = ({ items }) => {
             <td>
               <div className="username flex items-center">
                 <div>
-                  <img src={logoSvg} className="ml-3 mr-3" alt="sov" />
+                  <img src={logoSvg} className="ml-3 mr-3" alt="fish" />
                 </div>
-                <div className="text-sm font-normal hidden xl:block">SOV</div>
+                <div className="text-sm font-normal hidden xl:block">FISH</div>
               </div>
             </td>
             <td className="text-left font-normal">
-              {numberFromWei(item.returnValues.amount)} SOV
+              {numberFromWei(item.returnValues.amount)} FISH
               <br />
             </td>
             <td className="text-left hidden lg:table-cell font-normal relative">
@@ -201,13 +201,13 @@ const HistoryTable: React.FC<History> = ({ items }) => {
                   <br />
                   <LinkToExplorer
                     txHash={item.transactionHash}
-                    className="text-gold hover:text-gold hover:underline font-medium font-montserrat tracking-normal"
+                    className="text-gold hover:text-gold hover:underline font-medium font-arbel tracking-normal"
                   />
                 </div>
               </div>
             </td>
             <td className="text-left hidden lg:table-cell font-normal">
-              {numberFromWei(item.returnValues.totalStaked)} SOV
+              {numberFromWei(item.returnValues.totalStaked)} FISH
             </td>
           </tr>
         );

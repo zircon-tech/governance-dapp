@@ -359,7 +359,7 @@ export function ProposalDetailsPage() {
                     <button
                       onClick={governanceCancel}
                       type="button"
-                      className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mx-1 px-5 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-montserrat"
+                      className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mx-1 px-5 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-arbel"
                     >
                       Cancel
                     </button>
@@ -368,7 +368,7 @@ export function ProposalDetailsPage() {
                   <button
                     onClick={governanceQueue}
                     type="button"
-                    className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mx-1 px-5 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-montserrat"
+                    className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mx-1 px-5 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-arbel"
                   >
                     Queue
                   </button>
@@ -380,7 +380,7 @@ export function ProposalDetailsPage() {
                     <button
                       onClick={governanceExecute}
                       type="button"
-                      className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mx-1 px-5 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-montserrat"
+                      className="text-gold tracking-normal hover:text-gold hover:no-underline hover:bg-gold hover:bg-opacity-30 mx-1 px-5 py-2 bordered transition duration-500 ease-in-out rounded-full border border-gold text-sm font-light font-arbel"
                     >
                       Execute
                     </button>
@@ -412,7 +412,7 @@ function VotingTable(props: TableProps) {
   }, [props.items, props.showSupporters]);
 
   return (
-    <StyledTable className="w-full text-left table-small font-montserrat">
+    <StyledTable className="w-full text-left table-small font-arbel">
       <thead>
         <tr>
           <th>Addresses</th>
@@ -709,7 +709,7 @@ const StyledTable = styled.table`
         font-weight: 100;
         font-family: 'Work Sans';
         a {
-          color: #fec004;
+          color: #32f05f;
           font-family: 'Work Sans';
           &:hover {
             text-decoration: underline;
