@@ -13,31 +13,31 @@ import multicallABI from './abi/multicall.json';
 export const contracts: IContractNetworks = {
   testnet: {
     sovToken: {
-      address: '0xFA2d9683757D1b6C2fE590873E3960Ee2B3ED72d',
+      address: '0xaa7038D80521351F243168FefE0352194e3f83C3',
       abi: SovTokenABI as any,
     },
     staking: {
-      address: '0xbfbA98A17e5501408b11Fe5520c92fb2E6B086Fa',
+      address: '0xc1fc98FEFA2130fC1CE352ec85f7aa61021eFE97',
       abi: StakingABI as any,
     },
     governorAdmin: {
-      address: '0x7727E1F110A2f37cCF2473F83F2d31D18b724080',
+      address: '0xC7c0f925BC000b7D4d195518CF137ceB895Cf474',
       abi: GovernorAdminABI as any,
     },
     governorOwner: {
-      address: '0xfaB3D992d850C4a76f9b1E67ef4BF7d6812e71b9',
+      address: '0x108203F4B06CD28891b370438C0aF981A9785597',
       abi: GovernorAdminABI as any,
     },
     vestingRegistry: {
-      address: '0xFfc40d5C11b6E2De59E2A3CEE793F680C14066B3',
+      address: '0xFd8ea2e5e8591fA791d44731499cDF2e81CD6a41',
       abi: VestingRegistryABI as any,
     },
     vestingRegistry2: {
-      address: '0xFfc40d5C11b6E2De59E2A3CEE793F680C14066B3',
+      address: '0xFd8ea2e5e8591fA791d44731499cDF2e81CD6a41',
       abi: VestingRegistryABI as any,
     },
     vestingRegistry3: {
-      address: '0xFfc40d5C11b6E2De59E2A3CEE793F680C14066B3',
+      address: '0xFd8ea2e5e8591fA791d44731499cDF2e81CD6a41',
       abi: VestingRegistryABI as any,
     },
     priceFeed: {
