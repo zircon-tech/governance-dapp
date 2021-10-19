@@ -64,7 +64,7 @@ export function prettyTx(
 ) {
   const start = text.substr(0, startLength);
   const end = text.substr(-endLength);
-  return `${start} ··· ${end}`;
+  return `${start} ... ${end}`;
 }
 
 export function getContract(contractName: ContractName) {
