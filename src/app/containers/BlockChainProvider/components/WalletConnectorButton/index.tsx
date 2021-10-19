@@ -56,8 +56,8 @@ const StyledButtonAuth = styled.button.attrs(_ => ({
   padding: 0 0 0 20px;
   border-radius: 6px;
   font-weight: 100;
-  font-size: 14px;
-  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-family: 'ArbelRegular';
   letter-spacing: 0;
   display: flex;
   align-items: center;
