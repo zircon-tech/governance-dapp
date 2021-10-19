@@ -95,31 +95,31 @@ export const contracts: IContractNetworks = {
   },
   mainnet: {
     sovToken: {
-      address: '0xEFc78fc7d48b64958315949279Ba181c2114ABBd',
+      address: '0x055a902303746382fbb7d18f6ae0df56efdc5213',
       abi: SovTokenABI as any,
     },
     staking: {
-      address: '0x5684a06CaB22Db16d901fEe2A5C081b4C91eA40e',
+      address: '0xFd8ea2e5e8591fA791d44731499cDF2e81CD6a41',
       abi: StakingABI as any,
     },
     governorAdmin: {
-      address: '0xfaB3D992d850C4a76f9b1E67ef4BF7d6812e71b9',
+      address: '0xA91b53289375836565ea0c276286561fEd555C85',
       abi: GovernorAdminABI as any,
     },
     governorOwner: {
-      address: '0xfaB3D992d850C4a76f9b1E67ef4BF7d6812e71b9',
+      address: '0x409b92978ca7745DA04f9e62a386774cABE02B46',
       abi: GovernorAdminABI as any,
     },
     vestingRegistry: {
-      address: '0x80B036ae59B3e38B573837c01BB1DB95515b7E6B',
+      address: '0x036ab2DB0a3d1574469a4a7E09887Ed76fB56C41',
       abi: VestingRegistryABI as any,
     },
     vestingRegistry2: {
-      address: '0x0a9bDbf5e104a30fb4c99f6812FB85B60Fd8D372',
+      address: '0x036ab2DB0a3d1574469a4a7E09887Ed76fB56C41',
       abi: VestingRegistryABI as any,
     },
     vestingRegistry3: {
-      address: '0x14F3FE332e21Ef3f5d244C45C8D5fbFcEF2FB5c9',
+      address: '0x036ab2DB0a3d1574469a4a7E09887Ed76fB56C41',
       abi: VestingRegistryABI as any,
     },
     priceFeed: {
@@ -167,7 +167,7 @@ export const contracts: IContractNetworks = {
       abi: tokenAbi as any,
     },
     SOV_token: {
-      address: '0xEFc78fc7d48b64958315949279Ba181c2114ABBd',
+      address: '0x055a902303746382fbb7d18f6ae0df56efdc5213',
       abi: tokenAbi as any,
     },
     multicall: {
