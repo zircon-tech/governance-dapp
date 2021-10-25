@@ -1,6 +1,6 @@
 import { Asset } from '../../../types/assets';
-import { AssetsDictionary } from '../BlockChainProvider/dictionary/assets-dictionary';
-import { network } from '../../containers/BlockChainProvider/network';
+import { AssetsDictionary } from './dictionary/assets-dictionary';
+import { network } from './network';
 import { ContractName } from '../../../types/contracts';
 import { appContracts } from './app-contracts';
 

@@ -108,7 +108,8 @@ export function Header() {
 
   const pages = [
     {
-      to: 'https://babelfish.netlify.app',
+      // to: 'https://babelfish.sovryn.app',
+      to: '/',
       title: t(translations.mainMenu.dapp),
     },
     {
@@ -183,7 +184,6 @@ export function Header() {
       outline: none;
     }
   `;
-  console.log(location.pathname);
   return (
     <>
       {CHAIN_ID !== chainId && (
@@ -198,7 +198,10 @@ export function Header() {
         </div>
       )}
       <header className="bg-black mb-2">
-        <div style={{padding: '20px 20px'}} className="flex min-h justify-between items-center mb-2">
+        <div
+          style={{ padding: '20px 20px' }}
+          className="flex min-h justify-between items-center mb-2"
+        >
           <a
             href="https://babelfish.netlify.app"
             rel="noopener noreferrer"
@@ -240,4 +243,3 @@ const StyledLogo = styled.img.attrs(_ => ({
     margin: 0;
   `}
 `;
-

@@ -41,9 +41,6 @@ export function useGetUnlockedVesting(vestingAddress: string) {
         )) as string;
         value = bignumber(value).add(stake).toFixed(0);
       }
-
-      console.log('amount for', vestingAddress, value);
-
       return value;
     };
 

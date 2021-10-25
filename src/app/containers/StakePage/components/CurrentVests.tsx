@@ -136,11 +136,9 @@ function useGetItems() {
       });
 
     if (account && account !== genesisAddress) {
-      console.log('started loading for ', account);
       setState({ items: [], loading: true, error: '' });
       run()
         .then((value: any) => {
-          console.log('loaded for ', account, value);
           setState({ items: value, loading: false, error: '' });
         })
         .catch(e => {

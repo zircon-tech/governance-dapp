@@ -34,7 +34,6 @@ export function HistoryEventsTable() {
       const stake = await network
         .getPastEvents('staking', 'TokensStaked', { staker: account }, 0)
         .then(res => {
-          console.log('stake done');
           setEventsHistory(res);
         });
 
