@@ -203,7 +203,7 @@ export function Header() {
           className="flex min-h justify-between items-center mb-2"
         >
           <a
-            href="https://babelfish.netlify.app"
+            href="/"
             rel="noopener noreferrer"
             className="flex items-center hover:no-underline text-white font-normal"
           >
