@@ -115,7 +115,7 @@ export function VestingContract(props: Props) {
           <td className="text-left font-normal">
             <p className={`${lockedAmount.loading && 'skeleton'}`}>
               {numberFromWei(lockedAmount.value || '0')}{' '}
-              {props.type === 'genesis' ? 'CSOV' : 'SOV'}
+              {props.type === 'genesis' ? 'CFISH' : 'FISH'}
             </p>
           </td>
           <td className="text-left hidden lg:table-cell font-normal">
