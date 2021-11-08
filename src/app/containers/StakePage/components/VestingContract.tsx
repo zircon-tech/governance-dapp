@@ -105,10 +105,10 @@ export function VestingContract(props: Props) {
                 <img src={logoSvg} className="ml-3 mr-3" alt="fish" />
               </div>
               <div className="text-sm font-normal hidden xl:block pl-3">
-                {props.type === 'genesis' && 'CSOV Genesis'}
-                {props.type === 'origin' && 'SOV Origin'}
-                {props.type === 'team' && 'SOV Team'}
-                {props.type === 'reward' && 'Reward SOV'}
+                {props.type === 'genesis' && 'CFISH Genesis'}
+                {props.type === 'origin' && 'FISH Origin'}
+                {props.type === 'team' && 'FISH Team'}
+                {props.type === 'reward' && 'Reward FISH'}
               </div>
             </div>
           </td>
